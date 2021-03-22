@@ -15,7 +15,7 @@ $ dotnet tool install az-devops-tools --global
 L'outil ne présente (pour l'instant) qu'une seule commande :
 
 ```bash
-$ az-devops-tools templates status --collection-url "" --project-name "" --personal-access-token "" --template-repository-name ""
+$ az-devops-tools templates status --collection-url "" --project-name "" --personal-access-token "" --repository-name ""
 ```
 
 Le résultat produit est le suivant :

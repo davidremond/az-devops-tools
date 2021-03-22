@@ -2,8 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <PackAsTool>true</PackAsTool>
     <AssemblyName>az-devops-tools</AssemblyName>
+    <ToolCommandName>az-devops-tools</ToolCommandName>
+    <TargetFramework>net5.0</TargetFramework>
+    <Description>Provides extension commands for Azure DevOps.</Description>
   </PropertyGroup>
 
   <ItemGroup>
