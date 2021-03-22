@@ -1,0 +1,17 @@
+name: az-devops-tools-release-$(Date:yyyyMMdd)-$(rev:r)
+
+trigger: none
+
+pr:
+ autoCancel: true
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Build solution
+  inputs:
+    command: 'build'
+    projects: '**\*.sln'
+    arguments: '--configuration release'
