@@ -12,7 +12,7 @@ $ dotnet tool install az-devops-tools --global
 
 ## Utilisation
 
-L'outil ne présente qu'une seule commande :
+L'outil ne présente (pour l'instant) qu'une seule commande :
 
 ```bash
 $ az-devops-tools templates status --collection-url "" --project-name "" --personal-access-token "" --template-repository-name ""
@@ -33,10 +33,10 @@ Le résultat produit est le suivant :
 * Pipelines status *
 ********************
 
-Pipeline : 'devops/latest.yml'
+Pipeline : 'pipeline1.yml'
     Template 'deploy_webapp' : Up to date !
 
-Pipeline : 'devops/release.yml'
+Pipeline : 'pipeline2.yml'
     Template 'deploy_webapp' : Upgrade from v2 to v4
     Template 'deploy_database' : Up to date !
 
