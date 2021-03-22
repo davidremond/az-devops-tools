@@ -1,6 +1,6 @@
 # Az DevOps Tools
 
-L'outil fourni des commandes complémentaires liées aux opérations DevOps
+**az-devops-tools** fourni des fonctionnalités complémentaires aux opérations DevOps.
 
 ## Installation
 
