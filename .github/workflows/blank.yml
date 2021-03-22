@@ -1,0 +1,29 @@
+name: release
+
+on:
+  workflow_run:
+    workflows: ["ci"]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  publish_nuget:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.x'
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Publish to Nuget
+        uses: brandedoutcast/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src/Az.DevOps.Tools.CLI/Az.DevOps.Tools.CLI.csproj
+          VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
+          TAG_FORMAT: '*'
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
