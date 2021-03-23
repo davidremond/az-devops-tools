@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Az.DevOps.Tools.CLI", "Az.DevOps.Tools.CLI\Az.DevOps.Tools.CLI.csproj", "{0F067DEC-64CE-498B-A4C4-AD461D2B4BEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Az.DevOps.Services", "Az.DevOps.Services\Az.DevOps.Services.csproj", "{BDB2EDF4-1800-4DEF-9E01-3E98CC6757F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F067DEC-64CE-498B-A4C4-AD461D2B4BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F067DEC-64CE-498B-A4C4-AD461D2B4BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F067DEC-64CE-498B-A4C4-AD461D2B4BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F067DEC-64CE-498B-A4C4-AD461D2B4BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB2EDF4-1800-4DEF-9E01-3E98CC6757F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB2EDF4-1800-4DEF-9E01-3E98CC6757F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB2EDF4-1800-4DEF-9E01-3E98CC6757F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB2EDF4-1800-4DEF-9E01-3E98CC6757F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BC2A173-62A6-4576-BE5C-7CD6AC3F36DF}
+	EndGlobalSection
+EndGlobal

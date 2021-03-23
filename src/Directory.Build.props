@@ -1,0 +1,16 @@
+<Project>
+
+  <Import Project="Version.props" />
+
+  <PropertyGroup>
+    <Product>$(SolutionName)</Product>
+    <Company>az-devops-tools</Company>
+    <Copyright>Copyright © $([System.DateTime]::Now.ToString('yyyy')), az-devops-tools</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
