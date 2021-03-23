@@ -1,7 +1,7 @@
 <Project>
 
-  <Import Project="version.props" />
-  
+  <Import Project="Version.props" />
+
   <PropertyGroup>
     <Product>$(SolutionName)</Product>
     <Company>az-devops-tools</Company>
@@ -13,5 +13,4 @@
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
 </Project>
