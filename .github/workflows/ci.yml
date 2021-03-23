@@ -16,6 +16,6 @@ jobs:
         with:
           dotnet-version: '5.0.101'
       - name: Install dependencies
-        run: dotnet restore src\Az.DevOps.Tools.sln
+        run: dotnet restore src/Az.DevOps.Tools.sln
       - name: Build
-        run: dotnet build src\Az.DevOps.Tools.sln --configuration Release --no-restore
+        run: dotnet build src/Az.DevOps.Tools.sln --configuration Release --no-restore
