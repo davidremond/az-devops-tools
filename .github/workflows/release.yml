@@ -15,11 +15,11 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '5.x'
+          dotnet-version: '5.0.101'
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore src/Az.DevOps.Tools.sln
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build src/Az.DevOps.Tools.sln --configuration Release --no-restore
       - name: Publish to Nuget
         uses: brandedoutcast/publish-nuget@v2
         with:
