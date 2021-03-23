@@ -1,7 +1,7 @@
 <Project>
-    
+
   <PropertyGroup>
-    <MajorVersion>0</MajorVersion>
+    <MajorVersion>1</MajorVersion>
     <MinorVersion>0</MinorVersion>
     <PatchVersion>0</PatchVersion>
     <ReleaseLabel></ReleaseLabel>
@@ -11,5 +11,4 @@
     <VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
     <VersionSuffix>$(ReleaseLabel)</VersionSuffix>
   </PropertyGroup>
-  
 </Project>
