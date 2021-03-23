@@ -16,6 +16,6 @@ jobs:
         with:
           dotnet-version: '5.0.101'
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore **\*.sln
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build **\*.sln --configuration Release --no-restore
