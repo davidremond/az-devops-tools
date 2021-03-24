@@ -1,24 +1,45 @@
 # Az DevOps Tools
 
-**az-devops-tools** fourni des fonctionnalités complémentaires aux opérations DevOps.
+**az-devops-tools** provides additional features for Azure DevOps Services.
+
+The tool provides these features :
+- Checking status of templates and pipelines and output a migration path for pipelines and templates life cycle.
+
+New features will be available soon.
 
 ## Installation
 
-L'outil peut être installé en exécutant la commande suivante :
+You can install the tool by executing this command :
 
 ```bash
 $ dotnet tool install az-devops-tools --global
 ```
 
-## Utilisation
+The tool is also available on [Nuget]().
 
-L'outil ne présente (pour l'instant) qu'une seule commande :
+## Help
+
+Use this command to list all available commands.
 
 ```bash
-$ az-devops-tools templates status --collection-url "" --project-name "" --personal-access-token "" --repository-name ""
+$ az-devops-tools --help
 ```
 
-Le résultat produit est le suivant :
+## Authentication
+
+The tool use only PAT authentication to Azure DevOps. 
+Before using the tool, you have to generate a new token with these permissions :
+- Code : Read
+
+## Usages
+
+The tool provides (for the moment) only one command that check you templates status :
+
+```bash
+$ az-devops-tools templates status --collection-url "https://dev.azure.com/{your organization}" --project-name "{your team project}" --personal-access-token "{your personal access token}" --repository-name "{name of the repository containing templates}"
+```
+
+This command provides this output :
 
 ```
                      _                                 _              _
@@ -52,10 +73,4 @@ Template : 'deploy_webapp'
 
 Template : 'deploy_database'
     Version 'v1' : Used by pipelines
-```
-
-## Aide
-
-```bash
-$ az-devops-tools templates status --help
 ```
