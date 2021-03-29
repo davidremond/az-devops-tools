@@ -15,7 +15,7 @@ You can install the tool by executing this command :
 $ dotnet tool install az-devops-tools --global
 ```
 
-The tool is also available on [Nuget]().
+The tool is also available on [Nuget](https://www.nuget.org/packages/az-devops-tools).
 
 ## Help
 
