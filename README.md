@@ -9,13 +9,13 @@ New features will be available soon.
 
 ## Installation
 
+The tool is available on [Nuget](https://www.nuget.org/packages/az-devops-tools).
+
 You can install the tool by executing this command :
 
 ```bash
 $ dotnet tool install az-devops-tools --global
 ```
-
-The tool is also available on [Nuget](https://www.nuget.org/packages/az-devops-tools).
 
 ## Help
 
@@ -27,7 +27,7 @@ $ az-devops-tools --help
 
 ## Authentication
 
-The tool use only PAT authentication to Azure DevOps. 
+The tool only use PAT authentication to Azure DevOps. 
 Before using the tool, you have to generate a new token with these permissions :
 - Code : Read
 
