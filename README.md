@@ -8,7 +8,6 @@ The tool provides these features :
 New features will be available soon.
 
 ## Installation
-
 The tool is available on [Nuget](https://www.nuget.org/packages/az-devops-tools).
 
 You can install the tool by executing this command :
