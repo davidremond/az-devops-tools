@@ -32,7 +32,26 @@ Before using the tool, you have to generate a new token with these permissions :
 
 ## Usages
 
-The tool provides (for the moment) only one command that check you templates status :
+For the moment, the tool provides only one command that check your templates status.
+
+You have to store your templates with the following hierarchy (template name then version) in a Git repository and a folder structure : **\*/#template_name#/#version#/\*\*/*.yml**
+
+For example, you can use the following structure can be used to store your templates :
+- jobs
+  - deploy_database
+    - v1
+    - v2
+    - v3
+  - deploy_webapp
+    - v1
+    - v2
+
+Templates are referenced like this in your pipelines : **jobs/#template_name#/#version#/template.yml@#repository_name#**
+
+The tool will retrieve all references and identify actions to keep templates repository healthy :
+- remove obsolete templates (prevents usage of old versions in your pipelines)
+- identify broken references (prevents from pipeline errors)
+- identify old templates versions used in pipelines
 
 ```bash
 $ az-devops-tools templates status --collection-url "https://dev.azure.com/{your organization}" --project-name "{your team project}" --personal-access-token "{your personal access token}" --repository-name "{name of the repository containing templates}"
